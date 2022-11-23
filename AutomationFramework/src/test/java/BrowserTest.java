@@ -16,6 +16,8 @@ public class BrowserTest {
             String title = driver.getTitle();
             Assert.assertEquals("Jenkins", title);
 
+            System.out.println(title);
+
             driver.quit();
 
         }
