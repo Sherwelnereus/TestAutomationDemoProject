@@ -1,3 +1,4 @@
+import Pages.JenkinsHomePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.junit.Test;
@@ -16,12 +17,8 @@ public class BrowserTest {
             driver.get("https://www.jenkins.io/");
             driver.manage().window().maximize();
 
-            String title = driver.getTitle();
-            Assert.assertEquals("Jenkins", title);
+            JenkinsHomePage.clickOnBlogLink(driver);
 
-            System.out.println(title);
-            WebElement blogLink = driver.findElement(By.xpath("//a[@class='nav-link'][normalize-space()='Blog']"));
-            blogLink.click();
 
             Thread.sleep(3000);
 
