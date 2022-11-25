@@ -6,8 +6,18 @@ import org.openqa.selenium.WebElement;
 
 public class JenkinsHomePage {
 
-    public static void clickOnBlogLink(WebDriver driver){
-        WebElement blogLink = driver.findElement(By.xpath("//a[@class='nav-link'][normalize-space()='Blog']"));
-        blogLink.click();
+     WebDriver driver = null;
+     By clickBlogLink = By.xpath("//a[@class='nav-link'][normalize-space()='Blog']");
+
+    public JenkinsHomePage(WebDriver driver){
+
+        this.driver = driver;
+
+    }
+
+    public void clickOnBlogLink(){
+
+       driver.findElement(clickBlogLink).click();
+
     }
 }
