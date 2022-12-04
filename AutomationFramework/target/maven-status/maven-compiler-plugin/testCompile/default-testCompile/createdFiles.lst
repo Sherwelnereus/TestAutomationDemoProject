@@ -1,1 +1,4 @@
-BrowserTest.class
+pages\JenkinsBlogPage.class
+sampleTests\JenkinsHomePageTest.class
+sampleTests\JenkinsBlogPageTest.class
+pages\JenkinsHomePage.class
