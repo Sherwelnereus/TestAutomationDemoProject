@@ -21,11 +21,9 @@ public class JenkinsHomePageTest {
             JenkinsHomePage homePageObj = new JenkinsHomePage(driver);
             homePageObj.clickOnBlogLink();
 
-            System.out.println(driver.getTitle());
-
-
-
             Thread.sleep(3000);
+
+            driver.wait();
 
             driver.quit();
 
