@@ -23,7 +23,7 @@ public class JenkinsHomePageTest {
 
             Thread.sleep(3000);
 
-           
+            driver.wait();
 
             driver.quit();
 
