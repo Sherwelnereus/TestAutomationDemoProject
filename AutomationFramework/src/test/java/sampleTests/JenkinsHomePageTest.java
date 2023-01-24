@@ -17,8 +17,7 @@ public class JenkinsHomePageTest {
             driver.manage().window().maximize();
 
             Thread.sleep(2000);
-
-            System.out.println(driver.getTitle());
+            
 
             driver.quit();
 
