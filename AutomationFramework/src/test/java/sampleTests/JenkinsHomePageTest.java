@@ -18,6 +18,8 @@ public class JenkinsHomePageTest {
 
             Thread.sleep(2000);
 
+            driver.getTitle();
+
 
             driver.quit();
 
